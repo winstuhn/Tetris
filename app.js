@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'blue'
   ]
 
-  //Practice changes
+  //Practice changes again and again
   //The Tetrominoes
   const lTetromino = [
     [1, width+1, width*2+1, 2],
