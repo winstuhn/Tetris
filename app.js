@@ -229,7 +229,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if(row.every(index => squares[index].classList.contains('taken'))) {
         score +=10
-        scoreDisplay.innerHTML = score
+        scoreDisplay.innerHTML = " " + score
         row.forEach(index => {
           squares[index].classList.remove('taken')
           squares[index].classList.remove('tetromino')
@@ -245,7 +245,7 @@ document.addEventListener('DOMContentLoaded', () => {
   //game over
   function gameOver() {
     if(current.some(index => squares[currentPosition + index].classList.contains('taken'))) {
-      scoreDisplay.innerHTML = 'end'
+      scoreDisplay.innerHTML = score
       clearInterval(timerId)
     }
   }

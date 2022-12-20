@@ -1,12 +1,27 @@
+body {
+ background-color: gray;
+}
+
 .container {
   display:flex
 }
+
+.controls {
+ background-color: black;
+ border-style: solid;
+ border-color: white;
+ color: grey;
+ height: 120px;
+}
+
 .grid {
   width: 200px;
   height: 400px;
   background-color: black;
   display: flex;
   flex-wrap: wrap;
+  border-style: solid;
+  border-color: white;
 }
 
 .grid div {
@@ -19,10 +34,11 @@
 }
 
 .mini-grid {
-  margin-left: 50px;
   width: 80px;
   height: 80px;
   background-color: black;
+  border-style: solid;
+  border-color: white;
   display: flex;
   flex-wrap: wrap;
 }
